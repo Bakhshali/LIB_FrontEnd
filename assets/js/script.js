@@ -123,22 +123,75 @@ $(document).ready(function () {
         else return;
 
     });
-})
 
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    responsive: {
-        0: {
-            items: 2
-        },
-        600: {
-            items: 2
-        },
-        1000: {
-            items: 3
-        }
-    }
-})
+    $(".respmenu").hide();
+    $(".serviceClick").hide();
+    $(".aboutClick").hide();
+    $(".branchClick").hide();
+    $(".iconmenuresponsive .fa-chevron-down").hide();
+    $(".iconmenuabout .fa-chevron-down").hide();
+    $(".iconmenubranch .fa-chevron-down").hide();
+
+
+    $(".logo i").click(function(){
+        $(".respmenu").slideToggle("easing");
+    });
+
+    $(".iconmenuresponsive i").click(function(){
+        $(".serviceClick").slideToggle("easing");
+        $(".yellowService").css('background','#EAB830');
+        $(".serviceRespo a").css('color','white');
+        $(".iconmenuresponsive .fa-chevron-down").css('color','white');
+        $(".iconmenuresponsive .fa-chevron-down").show();
+        $(".iconmenuresponsive .fa-angle-right").hide();
+
+
+    });
+
+    $(".iconmenuresponsive .fa-chevron-down").click(function(){   
+        $(".iconmenuresponsive .fa-chevron-down").hide();
+        $(".iconmenuresponsive .fa-angle-right").show();
+        $(".yellowService").css('background','#F0F2F5');
+        $(".serviceRespo a").css('color','#555555');
+
+    });
+
+    $(".iconmenuabout i").click(function(){
+        $(".aboutClick").slideToggle("easing");
+        $(".yellowabout").css('background','#EAB830');
+        $(".aboutRespo a").css('color','white');
+        $(".iconmenuabout .fa-chevron-down").css('color','white');
+        $(".iconmenuabout .fa-chevron-down").show();
+        $(".iconmenuabout .fa-angle-right").hide();
+
+
+    });
+
+    $(".iconmenuabout .fa-chevron-down").click(function(){   
+        $(".iconmenuabout .fa-chevron-down").hide();
+        $(".iconmenuabout .fa-angle-right").show();
+        $(".yellowabout").css('background','#F0F2F5');
+        $(".aboutRespo a").css('color','#555555');
+
+    });
+
+    $(".iconmenubranch i").click(function(){
+        $(".branchClick").slideToggle("easing");
+        $(".yellowbranch").css('background','#EAB830');
+        $(".branchRespo a").css('color','white');
+        $(".iconmenubranch .fa-chevron-down").css('color','white');
+        $(".iconmenubranch .fa-chevron-down").show();
+        $(".iconmenubranch .fa-angle-right").hide();
+
+
+    });
+
+    $(".iconmenubranch .fa-chevron-down").click(function(){   
+        $(".iconmenubranch .fa-chevron-down").hide();
+        $(".iconmenubranch .fa-angle-right").show();
+        $(".yellowbranch").css('background','#F0F2F5');
+        $(".branchRespo a").css('color','#555555');
+
+    });
+});
 

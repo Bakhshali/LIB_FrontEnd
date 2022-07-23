@@ -6,6 +6,92 @@ header {
                     img {
                         width: 100px;
                     }
+                    i{
+                        font-size: 30px;
+                        color: #f2c448;
+                    }
+                }
+                .respmenu{
+                    width: 100%;
+                    background-color: #F0F2F5;
+                    .serviceClick{
+                        background-color: white;
+                        li{
+                            border: none;
+                            a{
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                color: #2C75E4;
+                                font-size: 16px;
+                            }
+                        }
+                        .languageboxes{
+                            li{
+                                a{
+                                    color: #273044;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .aboutClick{
+                        background-color: white;
+                        li{
+                            border: none;
+                            a{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    .branchClick{
+                        background-color: white;
+                        li{
+                            border: none;
+                            a{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    ul{
+                        padding-left: 0px;
+                        li{
+                            border-top: solid 1px rgb(209, 209, 209);
+                            list-style: none;
+                            padding: 15px;
+                            a{
+                                text-decoration: none;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                font-size: 17px;
+                                color: #555555;
+                            }
+                        }
+                    }
+                    i{
+                        font-size: 20px;
+                        color: #858585;
+                    }
+                    .searchinputResponsive{
+                        position: relative;
+                        input{
+                            
+                           border: solid 2px rgb(208, 208, 208);
+                            width: 100%;
+                            height: 65px;
+                            padding-left: 10px;
+                        }
+                        i{
+                            font-size: 22px;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            right: 0%;
+                            top: 0%;
+                            width: 65px;
+                            height: 65px;
+                            color: white;
+                            background-color: #f5af19;
+                        }
+                    }
                 }
 
                 .menu {
@@ -3190,6 +3276,22 @@ footer {
         .registerbox {
             input {
                 width: 100%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    header {
+        #mainbar {
+            .logo {
+                i{
+                    display: none;
+                }
+            }
+            .respmenu{
+                display: none;
             }
         }
     }
