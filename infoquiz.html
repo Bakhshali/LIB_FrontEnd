@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/scss/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="topbar">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-7">
+                        <div class="contact mt-3">
+                            <ul class="d-flex">
+                                <li><i class="fa-solid fa-phone-flip me-1"></i> 055 238 40 02</li>
+                                <li><i class="fa-solid fa-location-dot me-1"></i> Bakı şəh., Caspian plaza 1/6</li>
+                                <li><i class="fa-regular fa-clock me-1"></i> Sizə uyğun vaxtda</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="account d-flex">
+                            <span class="me-2"><i class="fa-solid fa-user me-2"></i>Login</span>
+                            <div class="line"></div>
+                            <span class="ms-2">Register</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav id="mainbar">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-1">
+                        <div class="logo mt-2">
+                            <a href="./index.html"><img src="./assets/img/logo/LIB-logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="menu">
+                            <ul class="d-flex justify-content-evenly">
+                                <li><a href="./service.html">XIDMƏTLƏR</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="">İngilis dili <i class="fa-solid fa-angle-right me-2"></i>
+                                                </a>
+                                                <div class="dropdown-menu-1">
+                                                    <ul>
+                                                        <li><a href="">Ümumi ingilis dili</a></li>
+                                                        <li><a href="">IELTS proqramı</a></li>
+                                                        <li><a href="">Məktəblilər üçün ingilis dili</a></li>
+                                                        <li><a href="">İngilis dili youtalk</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="">Rus dili <i class="fa-solid fa-angle-right me-2"></i></a>
+                                                <div class="dropdown-menu-1" style="height: 120px;">
+                                                    <ul>
+                                                        <li><a href="">Rus dili ümumi</a></li>
+                                                        <li><a href="">Məktəbli rus dili</a></li>
+                                                        <li><a href="">Rus dili youtalk(tezliklə)</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="">Alman dili <i class="fa-solid fa-angle-right me-2"></i></a>
+                                                <div class="dropdown-menu-1" style="height:60px ;">
+                                                    <ul>
+                                                        <li><a href="">Alman dili danışıq kursu</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="">Self study proqramı <i
+                                                        class="fa-solid fa-angle-right me-2"></i></a>
+                                                <div class="dropdown-menu-1" style="height:70px ;">
+                                                    <ul>
+                                                        <li><a href="">İngilis dili self study kursu</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="">HAQQIMIZDA</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a href="">Nə üçün biz? </a></li>
+                                            <li><a href="">Komandamız </a></li>
+                                            <li><a href="">Komandamıza qoşulun </a></li>
+                                            <li><a href="">Bloq </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="">FİLİALLAR</a>
+                                    <div class="dropdown-menu" style="height: 100px;">
+                                        <ul>
+                                            <li><a href="">Mərkəz Filialı </a></li>
+                                            <li><a href="">Əhmədli Filialı </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="">QALEREYA</a></li>
+                                <li><a href="">ƏLAQƏ</a></li>
+                                <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quizinfo">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-lg-8">
+                        <div class="title">
+                            <h1>
+                                İngilis dili level testi
+                            </h1>
+                        </div>
+                        <div class="aboutbox d-flex mt-5">
+                            <div class="left d-flex">
+                                <div class="image">
+                                    <img src="./assets/img/stm_lms_avatar1.png" alt="">
+                                </div>
+                                <div class="text ms-3">
+                                    <span>Teacher <p>Bakhshali Nazarov</p></span>
+                                </div>
+                            </div>
+                            <div class="right d-flex ms-5">
+                                <div class="icon">
+                                    <i class="fa-regular fa-bookmark mt-2"></i>
+                                </div>
+                                <div class="text ms-3">
+                                    <span>Kateqoriya <p>Quiz</p> </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aboutquiz mt-5">
+                            <ul class="d-flex justify-content-between ">
+                                <div class="box col-lg-4 text-center"
+                                    style="background-color: white ; border-top:solid 3px #385BCE" id="quizboxs">
+                                    <li>Haqqında</li>
+                                </div>
+                                <div class="boxmidle col-lg-4 text-center" id="quizboxs">
+                                    <li>Tədris methodu</li>
+                                </div>
+                                <div class="boxlaste col-lg-4 text-center" id="quizboxs">
+                                    <li>Şərtlər</li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="quizimage">
+                            <img src="./assets/img/Ingilid-dili-level-testi-LIB-DIL-Mərkəzi-870x440.jpg" alt="">
+                            <p class="mt-5">Ödənişsiz olaraq ingilis dili level testi imtahanında iştirak edə
+                                bilərsiniz.</p>
+                            <p>Elə indi <a href="">daxil olun</a> və dil səviyyənizi təyin edin!</p>
+                        </div>
+                        <div class="educationFormat mt-5">
+                            <h3>
+                                İngilis dili level testi
+                            </h3>
+                            <div class="box d-flex justify-content-between mt-4">
+                                <div class="namequiz mt-2 mb-2">
+                                    <span class="ms-2 me-2" style="color: rgb(170,170,170);">1<i style="color:#385BCE ;"
+                                            class="fa-regular fa-message ms-2"></i></span>
+                                    <span>LIB – İngilis dili (Level Test)</span>
+                                </div>
+                                <div class="numberquiz mt-2 me-4">
+                                    <span>20 questions</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="condition mt-5">
+                            <ul>
+                                <li>İmtahan da iştirak etmək üçün qeydiyyatdan keçməlisiniz</li>
+                                <li>İmtahan müddəti 15 dəqiqədir, vaxt bitdikdən sonra imtahan avtomatik dayanacaq</li>
+                                <li>İmtahan 20 sualdan ibarət olacaq</li>
+                                <li>Sualları yazıb bitirdikdən sonra nəticələriniz qarşınıza çıxacaq</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="btn mt-5">
+                            <a href="" class="btn btn-dark">İNDİ BAŞLA</a>
+                        </div>
+                        <div class="listener mt-5 ms-3 d-flex">
+                            <div class="left">
+                                <span>Hazırda kursda olan dinləyici</span> <br>
+                            <strong>: 475 dinləyici </strong>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-user-group"></i> <br>
+                            </div>
+                              
+                        </div>
+                        <div class="line mt-4"></div>
+                        <div class="listener mt-5 ms-3 d-flex justify-content-between">
+                            <div class="left">
+                                <span>Dərs müddəti</span>
+                                <strong>: 1 saat </strong>
+                            </div> 
+                                <div class="icon me-5">
+                                    <i class="fa-regular fa-clock"></i> <br>
+                                </div> 
+                        </div>
+                        <div class="line mt-4"></div> 
+                        <div class="listener mt-5 ms-3 d-flex justify-content-between">
+                            <div class="left">
+                                <span>Mühazirə</span>
+                                <strong>: 0 </strong>
+                            </div> 
+                                <div class="icon me-5">
+                                    <i class="fa-solid fa-bullhorn"></i> <br>
+                                </div> 
+                        </div>
+                        <div class="line mt-4"></div>
+                        <div class="working mt-5">
+                            <div class="title ms-4 mt-4">
+                                <h4>Working hours</h4>
+                            </div>
+                            <div class="watch mt-4">
+                                <ul>
+                                    <li class="d-flex justify-content-between">
+                                        <div class="week">
+                                            <span>Monday</span>
+                                        </div>
+                                        <div class="clock me-3">
+                                            <span>9:30 am - 6.00 pm</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <div class="week">
+                                            <span>Tuesdays</span>
+                                        </div>
+                                        <div class="clock me-3">
+                                            <span>9:30 am - 6.00 pm</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <div class="week">
+                                            <span>Wednesday</span>
+                                        </div>
+                                        <div class="clock me-3">
+                                            <span>9:30 am - 6.00 pm</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <div class="week">
+                                            <span>Thursday</span>
+                                        </div>
+                                        <div class="clock me-3">
+                                            <span>9:30 am - 6.00 pm</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <div class="week">
+                                            <span>Fridays</span>
+                                        </div>
+                                        <div class="clock me-3">
+                                            <span>9:30 am - 5.00 pm</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <div class="week">
+                                            <span>Saturday</span>
+                                        </div>
+                                        <div  style="background-color:rgb(221, 46, 46) ; width: 25%; border-radius: 5px; " class="clock me-3 d-flex justify-content-center align-items-center">
+                                            <span style="color: white;">Bağlı</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <div class="week">
+                                            <span>Sunday</span>
+                                        </div>
+                                        <div  style="background-color:rgb(221, 46, 46) ; width: 25%; border-radius: 5px; " class="clock me-3 d-flex justify-content-center align-items-center">
+                                            <span style="color: white;">Bağlı</span>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="copy">
+            <div class="container">
+                <div class="row mt-5 d-flex justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="text m-3">
+                            <img src="./assets/img/logo/lib-logo-white-2-50x56.png" alt="">
+                            <span class="ms-2">Bütün hüquqlar qorunur 2011-2021 © </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="social mt-3">
+                            <ul class="d-flex justify-content-evenly">
+                                <li><a href=""><span><i class="fa-brands fa-facebook"></i></span></a></li>
+                                <li><a href=""><span><i class="fa-brands fa-instagram"></i></span></a></li>
+                                <li><a href=""><span><i class="fa-brands fa-linkedin"></i></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="./assets/jquery.counterup.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./assets/js/quizinfo.js"></script>
+
+</body>
+
+</html>

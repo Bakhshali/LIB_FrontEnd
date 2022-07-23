@@ -11,13 +11,6 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/scss/css/style.css">
     <title>Document</title>
 </head>
@@ -129,18 +122,59 @@
         </nav>
     </header>
 
-    <main>       
-       <section id="course">
+    <main>
+
+        <section id="transition">
             <div class="container">
-                <div class="row  mt-5">
-                    
+                <div class="row p-1 mt-4">
+                    <div class="text">
+                        <a href="#"><span>HOME</span></a><i class="fa-solid fa-angle-right ms-2 me-2"></i>
+                        <a href="#"><span>İNGİLİS DİLİ</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="filtercourse">
+            <div class="container mt-5">
+                <h1>İngilis dili</h1>
+                <div class="row mt-5 d-flex justify-content-between align-items-center"
+                    style="background-color:#F0F2F5 ;">
+
+                    <div class="col-lg-4 mt-4 mb-4" id="searchinput">
+                        <input type="text" style="width:70% ;" placeholder="Search the courses">
+                        <input type="submit" name="" value="Search"
+                            style="width: 25%; background-color: #EAB830; color: white;">
+                    </div>
+                    <div class="col-lg-5 mt-3">
+                        <div class="box mb-3  d-flex justify-content-evenly">
+                            <select name="" id="" class="customerSelect">
+                                <option value="" id="1">All courses</option>
+                                <option value="">İELTS</option>
+                                <option value="">İngilis dili ümumi</option>
+                                <option value="">İngilis dili məktəblilər üçün</option>
+                                <option value="">Rus dili ümumi</option>
+                                <option value="">Rus dili məktəblilər üçün </option>
+                                <option value="">Alman dili ümumi</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="course">
+            <div class="container">
+                <div class="row  mt-3">
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div data-aos="zoom-in-up" data-aos-delay="50" class="box mt-4">
                             <div class="price">
                                 <p>89.00 AZN</p>
                             </div>
                             <div class="image">
-                                <img src="./assets/img/courses/Səkil-general-english-ingilis-dili-kursu-270x283.jpg" alt="">
+                                <img src="./assets/img/courses/Səkil-general-english-ingilis-dili-kursu-270x283.jpg"
+                                    alt="">
                             </div>
                             <div class="textbox">
                                 <div class="title ms-3 mt-3">
@@ -153,7 +187,7 @@
                             <div class="comment">
                                 <div class="icons mt-2">
                                     <span class="me-2 ms-3"><i class="fa-solid fa-comment me-1"></i>0</span>
-                                <span><i class="fa-solid fa-user me-1"></i>0</span>
+                                    <span><i class="fa-solid fa-user me-1"></i>0</span>
                                 </div>
                                 <div class="monthly d-flex justify-content-end me-3">
                                     <span>89.00 AZN - 159.00 AZN</span>
@@ -161,7 +195,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div data-aos="zoom-in-up" data-aos-delay="150" class="box mt-4">
                             <div class="price">
@@ -181,7 +215,7 @@
                             <div class="comment">
                                 <div class="icons mt-2">
                                     <span class="me-2 ms-3"><i class="fa-solid fa-comment me-1"></i>0</span>
-                                <span><i class="fa-solid fa-user me-1"></i>0</span>
+                                    <span><i class="fa-solid fa-user me-1"></i>0</span>
                                 </div>
                                 <div class="monthly d-flex justify-content-end me-3">
                                     <span>149.00 AZN - 199.00 AZN</span>
@@ -208,7 +242,7 @@
                             <div class="comment">
                                 <div class="icons mt-2">
                                     <span class="me-2 ms-3"><i class="fa-solid fa-comment me-1"></i>0</span>
-                                <span><i class="fa-solid fa-user me-1"></i>0</span>
+                                    <span><i class="fa-solid fa-user me-1"></i>0</span>
                                 </div>
                                 <div class="monthly d-flex justify-content-end me-3">
                                     <span>55.00 AZN </span>
@@ -216,18 +250,17 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div data-aos="zoom-in-up" data-aos-delay="350" class="box mt-4">
+                        <div data-aos="zoom-in-up" data-aos-delay="250" class="box mt-4">
                             <div class="price">
-                                <p>65.00 AZN</p>
+                                <p>55.00 AZN</p>
                             </div>
                             <div class="image">
-                                <img src="./assets/img/courses/Səkil-Məktəbli-ingilis-dili-kursu-270x283.jpg" alt="">
+                                <img src="./assets/img/courses/Səkil-Youtalk-ingilis-dili-kursu-270x283.jpg" alt="">
                             </div>
                             <div class="textbox">
                                 <div class="title ms-3 mt-3">
-                                    <span>Məktəbli ingilis dili</span>
+                                    <span>İngilis dili youtalk</span>
                                 </div>
                                 <div class="btn mt-3">
                                     <a href="" class="btn btn-dark">DAHA ƏTRAFLI</a>
@@ -236,119 +269,10 @@
                             <div class="comment">
                                 <div class="icons mt-2">
                                     <span class="me-2 ms-3"><i class="fa-solid fa-comment me-1"></i>0</span>
-                                <span><i class="fa-solid fa-user me-1"></i>0</span>
+                                    <span><i class="fa-solid fa-user me-1"></i>0</span>
                                 </div>
                                 <div class="monthly d-flex justify-content-end me-3">
-                                    <span>65.00 AZN - 120.00 AZN</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div data-aos="zoom-in-up" data-aos-delay="450" class="box mt-4">
-                            <div class="price">
-                                <p>79.00 AZN</p>
-                            </div>
-                            <div class="image">
-                                <img src="./assets/img/courses/Səkil-Umumi-Rus-dili-kursu-270x283.jpg" alt="">
-                            </div>
-                            <div class="textbox">
-                                <div class="title ms-3 mt-3">
-                                    <span>Rus dili ümumi</span>
-                                </div>
-                                <div class="btn mt-3">
-                                    <a href="" class="btn btn-dark">DAHA ƏTRAFLI</a>
-                                </div>
-                            </div>
-                            <div class="comment">
-                                <div class="icons mt-2">
-                                    <span class="me-2 ms-3"><i class="fa-solid fa-comment me-1"></i>0</span>
-                                <span><i class="fa-solid fa-user me-1"></i>0</span>
-                                </div>
-                                <div class="monthly d-flex justify-content-end me-3">
-                                    <span>79.00 AZN - 129.00 AZN</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div data-aos="zoom-in-up" data-aos-delay="550" class="box mt-4">
-                            <div class="price">
-                                <p>65.00 AZN</p>
-                            </div>
-                            <div class="image">
-                                <img src="./assets/img/courses/Səkil-Məktəbli-rus-dili-kursu-270x283.jpg" alt="">
-                            </div>
-                            <div class="textbox">
-                                <div class="title ms-3 mt-3">
-                                    <span>İngilis dili ümumi</span>
-                                </div>
-                                <div class="btn mt-3">
-                                    <a href="" class="btn btn-dark">DAHA ƏTRAFLI</a>
-                                </div>
-                            </div>
-                            <div class="comment">
-                                <div class="icons mt-2">
-                                    <span class="me-2 ms-3"><i class="fa-solid fa-comment me-1"></i>0</span>
-                                <span><i class="fa-solid fa-user me-1"></i>0</span>
-                                </div>
-                                <div class="monthly d-flex justify-content-end me-3">
-                                    <span>65.00 AZN - 120.00 AZN</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div data-aos="zoom-in-up" data-aos-delay="650" class="box mt-4">
-                            <div class="price">
-                                <p>95.00 AZN</p>
-                            </div>
-                            <div class="image">
-                                <img src="./assets/img/courses/Səkil-Alman-dili-danisiq-kursu-270x283.jpg" alt="">
-                            </div>
-                            <div class="textbox">
-                                <div class="title ms-3 mt-3">
-                                    <span>Alman dili ümumi</span>
-                                </div>
-                                <div class="btn mt-3">
-                                    <a href="" class="btn btn-dark">DAHA ƏTRAFLI</a>
-                                </div>
-                            </div>
-                            <div class="comment">
-                                <div class="icons mt-2">
-                                    <span class="me-2 ms-3"><i class="fa-solid fa-comment me-1"></i>0</span>
-                                <span><i class="fa-solid fa-user me-1"></i>0</span>
-                                </div>
-                                <div class="monthly d-flex justify-content-end me-3">
-                                    <span>95.00 AZN - 165.00 AZN</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div data-aos="zoom-in-up" data-aos-delay="750" class="box mt-4">
-                            <div class="price">
-                                <p>49.00 AZN</p>
-                            </div>
-                            <div class="image">
-                                <img src="./assets/img/courses/Səkil-Self-study-ingilis-dili-kursu-270x283.jpg" alt="">
-                            </div>
-                            <div class="textbox">
-                                <div class="title ms-3 mt-3">
-                                    <span>İngilis dili ümumi</span>
-                                </div>
-                                <div class="btn mt-3">
-                                    <a href="" class="btn btn-dark">DAHA ƏTRAFLI</a>
-                                </div>
-                            </div>
-                            <div class="comment">
-                                <div class="icons mt-2">
-                                    <span class="me-2 ms-3"><i class="fa-solid fa-comment me-1"></i>0</span>
-                                <span><i class="fa-solid fa-user me-1"></i>0</span>
-                                </div>
-                                <div class="monthly d-flex justify-content-end me-3">
-                                    <span>49.00 AZN - 99.00 AZN</span>
+                                    <span>55.00 AZN </span>
                                 </div>
                             </div>
                         </div>
@@ -356,6 +280,20 @@
                 </div>
             </div>
         </section>
+
+        <section id="lines">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1 mt-3">
+                        <div class="shortline mt-4 ms-2"></div>
+                    </div>
+                    <div class="col-lg-11 mt-3">
+                        <div class="longline mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -381,15 +319,19 @@
             </div>
         </section>
     </footer>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="./assets/jquery.counterup.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script>
         AOS.init();
-      </script>
-    <script src="./assets/js/script.js"></script> 
+    </script>
+    <script src="./assets/js/script.js"></script>
 
 </body>
+
 </html>

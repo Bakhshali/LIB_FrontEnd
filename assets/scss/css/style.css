@@ -41,6 +41,8 @@ header #mainbar .container .row .menu .dropdown-menu {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-top: #EAB830 solid 3px;
   transition-delay: 0s, 0s, 0.3s;
+  -webkit-animation: Slide_Up 0.3s ease;
+          animation: Slide_Up 0.3s ease;
 }
 header #mainbar .container .row .menu .dropdown-menu ul {
   padding-left: 0px;
@@ -79,6 +81,8 @@ header #mainbar .container .row .menu .dropdown-menu .dropdown-menu-1 {
   height: 170px;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -webkit-animation: Slide_Up 0.3s ease;
+          animation: Slide_Up 0.3s ease;
 }
 header #topbar {
   background-color: #F15922;
@@ -558,7 +562,7 @@ main #faq .container .row .boxfaq {
 main #faq .container .row .boxfaq .answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1.5s ease;
+  transition: max-height 0.3s ease;
 }
 main #faq .container .row .boxfaq .answer ul li {
   font-family: Verdana, Geneva, sans-serif;
@@ -794,12 +798,12 @@ main #whyus .appeal .btn button {
   background-color: rgb(44, 117, 228);
   border: none;
 }
-main #result .shortline {
+main .shortline {
   width: 80%;
   height: 3px;
   background-color: #2C75E4;
 }
-main #result .longline {
+main .longline {
   width: 100%;
   height: 1px;
   background-color: rgb(176, 176, 176);
@@ -870,6 +874,21 @@ main #startnow .box .btn a {
 }
 main #startnow .box .btn a:hover {
   background-color: #6b9e68;
+}
+main #filtercourse #searchinput input {
+  height: 35px;
+  border: none;
+}
+main #filtercourse #searchinput input[type=text] {
+  padding-left: 15px;
+}
+main #filtercourse #searchinput input,
+main #filtercourse #searchinput select {
+  background-color: white;
+}
+main #filtercourse #searchinput input:focus {
+  background-color: white;
+  outline: none !important;
 }
 main #filtercourse option {
   font-size: 17px;
@@ -1736,6 +1755,615 @@ main #order .box .comment .monthly span {
   font-size: 19px;
   color: black;
 }
+main #account {
+  border-top: solid 4px #E5E5E5;
+  margin-top: 30px;
+}
+main #account .title {
+  text-align: center;
+}
+main #account .title p {
+  color: #273044;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 22px;
+}
+main #account h3 {
+  color: #273044;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 34px;
+}
+main #account .loginbox {
+  width: 100%;
+  background-color: #385BCE;
+  transition: 0.2s;
+}
+main #account .loginbox label {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 22px;
+  margin-top: 30px;
+  margin-left: 40px;
+  transition: 0.2s;
+}
+main #account .loginbox #inputlogin input {
+  margin-left: 40px;
+  width: 85%;
+  height: 45px;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+}
+main #account .loginbox #inputlogin input[type=text]::-moz-placeholder {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #969696;
+}
+main #account .loginbox #inputlogin input[type=text]:-ms-input-placeholder {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #969696;
+}
+main #account .loginbox #inputlogin input[type=text]::placeholder {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #969696;
+}
+main #account .loginbox #inputlogin input,
+main #account .loginbox #inputlogin select {
+  background-color: #F0F2F5;
+}
+main #account .loginbox #inputlogin input:focus {
+  background-color: white;
+  outline: none !important;
+  border: 2px solid rgb(236, 236, 236);
+}
+main #account .loginbox .remember .largeCheck {
+  width: 110px;
+  height: 25px;
+  margin-top: 20px;
+}
+main #account .loginbox .remember span {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 22px;
+  margin-top: 3px;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+main #account .loginbox .remember .btn button {
+  width: 135px;
+  height: 50px;
+  background-color: rgb(23, 210, 146);
+  border-radius: 50px;
+  border: none;
+  margin-bottom: 30px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 14px;
+}
+main #account .registerbox {
+  width: 100%;
+  background-color: #EEF1F7;
+  transition: 0.2s;
+}
+main #account .registerbox label {
+  color: #273044;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 22px;
+  margin-top: 30px;
+  transition: 0.2s;
+}
+main #account .registerbox input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  margin-top: 5px;
+}
+main #account .registerbox input[type=text]::-moz-placeholder {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #bcbcbc;
+}
+main #account .registerbox input[type=text]:-ms-input-placeholder {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #bcbcbc;
+}
+main #account .registerbox input[type=text]::placeholder {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #bcbcbc;
+}
+main #account .registerbox input:focus {
+  background-color: white;
+  outline: none !important;
+}
+main #account .registerbox .remember .largeCheck {
+  width: 110px;
+  height: 25px;
+  margin-top: 20px;
+}
+main #account .registerbox .remember span {
+  color: #2C75E4;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 22px;
+  margin-top: 3px;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+main #account .registerbox .btn button {
+  width: 135px;
+  height: 50px;
+  background-color: rgb(23, 210, 146);
+  border-radius: 50px;
+  border: none;
+  margin-bottom: 30px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 14px;
+}
+main #quizinfo .title h1 {
+  color: #273044;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 55px;
+}
+main #quizinfo .aboutbox img {
+  width: 45px;
+  border-radius: 50%;
+}
+main #quizinfo .aboutbox span {
+  color: #7d7d7d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+main #quizinfo .aboutbox span p {
+  color: #273044;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+main #quizinfo .aboutbox i {
+  font-size: 30px;
+  color: #385BCE;
+}
+main #quizinfo .aboutquiz {
+  width: 100%;
+  background-color: #F0F4FA;
+  cursor: pointer;
+}
+main #quizinfo .aboutquiz ul {
+  padding-left: 0;
+}
+main #quizinfo .aboutquiz ul li {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 21.4286px;
+  list-style: none;
+  color: #273044;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main #quizinfo .aboutquiz #quizboxs {
+  transition: 0.1s;
+}
+main #quizinfo .quizimage img {
+  width: 100%;
+}
+main #quizinfo .quizimage p {
+  color: #555555;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 30px;
+}
+main #quizinfo .quizimage p a {
+  text-decoration: none;
+}
+main #quizinfo .educationFormat h3 {
+  color: #273044;
+  font-size: 26px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main #quizinfo .educationFormat .box {
+  background-color: rgb(240, 244, 250);
+}
+main #quizinfo .educationFormat .box span:nth-child(2) {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #273044;
+  transition: 0.1s;
+}
+main #quizinfo .educationFormat .box span:nth-child(2):hover {
+  color: #385BCE;
+}
+main #quizinfo .educationFormat .box .numberquiz span {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #273044;
+}
+main #quizinfo .condition ul li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #273044;
+  padding: 10px;
+}
+main #quizinfo .btn {
+  width: 100%;
+  height: 75px;
+}
+main #quizinfo .btn a {
+  background-color: #2C75E4;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+main #quizinfo .listener {
+  width: 100%;
+}
+main #quizinfo .listener span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: #273044;
+}
+main #quizinfo .listener strong {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #273044;
+  font-weight: 700;
+}
+main #quizinfo .listener i {
+  font-size: 22px;
+  color: #385BCE;
+}
+main #quizinfo .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(211, 211, 211);
+}
+main #quizinfo .working {
+  border: solid 1px rgb(185, 185, 185);
+}
+main #quizinfo .working h4 {
+  font-size: 21px;
+  color: #273044;
+}
+main #quizinfo .working ul {
+  padding-left: 23px;
+}
+main #quizinfo .working ul li {
+  padding: 5px;
+  border-bottom: dashed 1px rgb(196, 196, 196);
+}
+main #quizinfo .working ul li:hover {
+  color: #7FBC7B;
+}
+main #quizinfo .working ul li span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #273044;
+}
+main #complete h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #273044;
+}
+main #complete label {
+  font-family: monospace;
+  font-size: 14px;
+  color: #adadad;
+}
+main #complete abbr {
+  color: #F13E3E;
+  font-size: 16px;
+}
+main #complete form input[type=text]::-moz-placeholder {
+  padding-left: 10px;
+}
+main #complete form input[type=text]:-ms-input-placeholder {
+  padding-left: 10px;
+}
+main #complete form input[type=text]::placeholder {
+  padding-left: 10px;
+}
+main #complete form input {
+  width: 100%;
+  height: 45px;
+  border: none;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding-left: 10px;
+}
+main #complete form input,
+main #complete form select {
+  background-color: #F0F2F5;
+}
+main #complete form input:focus {
+  background-color: white;
+  outline: none !important;
+  border: 2px solid rgb(236, 236, 236);
+}
+main #complete form textarea {
+  width: 94%;
+  border: none;
+  padding-left: 10px;
+}
+main #complete form textarea,
+main #complete form select {
+  background-color: #F0F2F5;
+}
+main #complete form textarea:focus {
+  background-color: white;
+  outline: none !important;
+  border: 2px solid rgb(236, 236, 236);
+}
+main #complete form select {
+  height: 45px;
+  width: 100%;
+  border: solid 1px rgb(203, 203, 203);
+  border-radius: 4px;
+  padding-left: 8px;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #273044;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 700;
+  background-color: white;
+}
+main a {
+  text-decoration: none;
+}
+main #yourorder h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #273044;
+}
+main #yourorder ul {
+  padding-left: 0px;
+}
+main #yourorder ul li {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #273044;
+  padding: 5px;
+}
+main #yourorder label {
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: 900;
+  color: #555555;
+}
+main #yourorder p {
+  color: #7B7B7B;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: italic;
+}
+main #yourorder .btn button {
+  background-color: rgb(44, 117, 228);
+  border: none;
+  border-radius: 0px;
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  height: 47px;
+}
+main #privacy .title {
+  text-align: center;
+}
+main #privacy .title h3 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #273044;
+}
+main #privacy p {
+  color: #273044;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  padding: 5px;
+}
+main #privacy ul {
+  padding-left: 20px;
+}
+main #privacy ul li {
+  padding: 3px;
+  color: #273044;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+main #myprofil .image img {
+  width: 100%;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+main #myprofil .image img:hover {
+  opacity: 30%;
+}
+main #myprofil h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #273044;
+}
+main #myprofil h4 {
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  color: #273044;
+}
+main #myprofil .box {
+  width: 100%;
+  background-color: #EEF1F7;
+}
+main #myprofil .box .main {
+  position: relative;
+}
+main #myprofil .box .main input {
+  width: 100%;
+}
+main #myprofil .box label {
+  color: #273044;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+main #myprofil .box input {
+  padding-left: 45px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+main #myprofil .box .iconkey i {
+  position: absolute;
+  top: 61%;
+  left: 8%;
+  font-size: 18px;
+  color: #AAAAAA;
+}
+main #myprofil .box .iconeye i {
+  position: absolute;
+  top: 61%;
+  right: 7%;
+  font-size: 17px;
+  color: #AAAAAA;
+}
+main #myprofil .box .iconeye #hide2 {
+  display: none;
+}
+main #myprofil .btn button {
+  background-color: #2C75E4;
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 50px;
+}
+main #myprofil .close button {
+  color: #273044;
+  background-color: rgb(238, 241, 247);
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 50px;
+}
+main #myprofil .close button:hover {
+  background-color: #385BCE;
+  color: white;
+}
+main #myprofil .close button:hover i {
+  color: white;
+}
+main #myprofil .close i {
+  font-size: 15px;
+  color: #273044;
+  transition: 0.2s;
+}
+main #favorite span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color: #273044;
+  font-weight: 700;
+}
+main #course .box {
+  position: relative;
+  cursor: pointer;
+}
+main #course .close i {
+  color: rgb(189, 189, 189);
+  position: absolute;
+  right: 2%;
+  top: 3%;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: solid 2px rgb(173, 173, 173);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+  cursor: pointer;
+}
+main #course .close i:hover {
+  color: red;
+  border: solid 2px red;
+}
 
 footer #copy {
   background-color: #F15922;
@@ -1885,5 +2513,15 @@ footer #copy .container .row .social ul li a {
 @media only screen and (max-width: 240px) {
   main #title-service h1 {
     font-size: 25px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main .registerbox input {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main .registerbox input {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
