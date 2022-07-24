@@ -4,6 +4,7 @@ header #mainbar .container .row .logo img {
 header #mainbar .container .row .logo i {
   font-size: 30px;
   color: #f2c448;
+  cursor: pointer;
 }
 header #mainbar .container .row .respmenu {
   width: 100%;
@@ -59,6 +60,7 @@ header #mainbar .container .row .respmenu ul li a {
 header #mainbar .container .row .respmenu i {
   font-size: 20px;
   color: #858585;
+  cursor: pointer;
 }
 header #mainbar .container .row .respmenu .searchinputResponsive {
   position: relative;
@@ -84,6 +86,10 @@ header #mainbar .container .row .respmenu .searchinputResponsive i {
 }
 header #mainbar .container .row .menu {
   margin-top: 35px;
+}
+header #mainbar .container .row .menu sup {
+  font-size: 14px;
+  color: #F15922;
 }
 header #mainbar .container .row .menu ul li {
   list-style: none;
@@ -183,6 +189,9 @@ header #topbar .container .row .contact ul li {
 }
 header #topbar .container .row .account {
   margin-top: 11px;
+}
+header #topbar .container .row .account a {
+  text-decoration: none;
 }
 header #topbar .container .row .account span {
   font-size: 14px;
@@ -1495,6 +1504,33 @@ main #transition .text span:hover {
 main #transition .text i {
   font-size: 11px;
   color: rgb(170, 170, 170);
+}
+main #addedBasket .box {
+  width: 100%;
+  border: solid 4px #10C45C;
+}
+main #addedBasket .box i {
+  font-size: 18px;
+  color: #10C45C;
+}
+main #addedBasket .box span {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  color: #10C45C;
+}
+main #addedBasket .btn a {
+  width: 100%;
+  background-color: #2C75E4;
+  border: none;
+  border-radius: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 42px;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main #detailcourse .title h2 {
   color: #273044;

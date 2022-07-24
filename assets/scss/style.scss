@@ -9,6 +9,7 @@ header {
                     i{
                         font-size: 30px;
                         color: #f2c448;
+                        cursor: pointer;
                     }
                 }
                 .respmenu{
@@ -68,6 +69,7 @@ header {
                     i{
                         font-size: 20px;
                         color: #858585;
+                        cursor: pointer;
                     }
                     .searchinputResponsive{
                         position: relative;
@@ -96,7 +98,10 @@ header {
 
                 .menu {
                     margin-top: 35px;
-
+                    sup{
+                        font-size: 14px;
+                        color:#F15922;
+                    }
                     ul {
                         li {
                             list-style: none;
@@ -223,7 +228,9 @@ header {
 
                 .account {
                     margin-top: 11px;
-
+                    a{
+                        text-decoration: none;
+                    }
                     span {
                         font-size: 14px;
                         color: white;
@@ -1828,6 +1835,37 @@ main {
                 color: rgb(170, 170, 170);
             }
         }
+    }
+    #addedBasket{
+       .box{
+        width: 100%;
+        border: solid 4px #10C45C;
+        i{
+            font-size: 18px;
+            color: #10C45C;
+        }
+        span{
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 900;
+            color: #10C45C;
+        }
+       }
+       .btn{
+        a{
+            width: 100%;
+            background-color: #2C75E4;
+            border: none;
+            border-radius: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 42px;
+            font-weight: 700;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       }
     }
 
     #detailcourse {
