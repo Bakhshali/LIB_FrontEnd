@@ -6,59 +6,74 @@ header {
                     img {
                         width: 100px;
                     }
-                    i{
+
+                    i {
                         font-size: 30px;
                         color: #f2c448;
                         cursor: pointer;
                     }
                 }
-                .respmenu{
+
+                .respmenu {
                     width: 100%;
                     background-color: #F0F2F5;
-                    .serviceClick{
+
+                    .serviceClick {
                         background-color: white;
-                        li{
+
+                        li {
                             border: none;
-                            a{
+
+                            a {
                                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                                 color: #2C75E4;
                                 font-size: 16px;
                             }
                         }
-                        .languageboxes{
-                            li{
-                                a{
+
+                        .languageboxes {
+                            li {
+                                a {
                                     color: #273044;
                                     font-size: 15px;
                                 }
                             }
                         }
                     }
-                    .aboutClick{
+
+                    .aboutClick {
                         background-color: white;
-                        li{
+
+                        li {
                             border: none;
-                            a{
+
+                            a {
                                 font-size: 15px;
                             }
                         }
                     }
-                    .branchClick{
+
+                    .branchClick {
                         background-color: white;
-                        li{
+
+                        li {
                             border: none;
-                            a{
+
+                            a {
                                 font-size: 15px;
                             }
                         }
                     }
-                    ul{
+
+                    ul {
                         padding-left: 0px;
-                        li{
+
+                        li {
                             border-top: solid 1px rgb(209, 209, 209);
                             list-style: none;
                             padding: 15px;
-                            a{
+
+                            a {
                                 text-decoration: none;
                                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                                 font-size: 17px;
@@ -66,21 +81,25 @@ header {
                             }
                         }
                     }
-                    i{
+
+                    i {
                         font-size: 20px;
                         color: #858585;
                         cursor: pointer;
                     }
-                    .searchinputResponsive{
+
+                    .searchinputResponsive {
                         position: relative;
-                        input{
-                            
-                           border: solid 2px rgb(208, 208, 208);
+
+                        input {
+
+                            border: solid 2px rgb(208, 208, 208);
                             width: 100%;
                             height: 65px;
                             padding-left: 10px;
                         }
-                        i{
+
+                        i {
                             font-size: 22px;
                             position: absolute;
                             display: flex;
@@ -98,10 +117,12 @@ header {
 
                 .menu {
                     margin-top: 35px;
-                    sup{
+
+                    sup {
                         font-size: 14px;
-                        color:#F15922;
+                        color: #F15922;
                     }
+
                     ul {
                         li {
                             list-style: none;
@@ -209,6 +230,19 @@ header {
 
         .container {
             .row {
+                .responsiveIconsTopbar {
+                    ul {
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+                            padding-left: 10px;
+                            color: white;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
                 .contact {
                     ul {
                         li {
@@ -228,9 +262,11 @@ header {
 
                 .account {
                     margin-top: 11px;
-                    a{
+
+                    a {
                         text-decoration: none;
                     }
+
                     span {
                         font-size: 14px;
                         color: white;
@@ -267,28 +303,25 @@ main {
             .carousel-inner {
                 .carousel-item {
                     img {
-                        object-fit: cover;
+                        object-fit: fill;
+                        height: 700px;
                     }
 
                     .carousel-caption {
-                        top: 30%;
+                        top: 40%;
 
                         h1 {
                             animation: Slide_Up 1.4s ease;
-                            font-size: 50px;
-                            font-style: normal;
-                            font-variant: normal;
+                            font-size: 40px;
                             font-weight: 700;
-                            letter-spacing: normal;
-                            line-height: 75px;
                             color: #f2c448;
-                            text-shadow: 2px 2px 5px black;
+                            text-shadow: 4px 4px 5px black;
 
                         }
 
                         p {
                             animation: Slide_Up 2.1s ease;
-                            font-size: 35px;
+                            font-size: 25px;
                             font-style: normal;
                             font-variant: normal;
                             font-weight: 700;
@@ -788,6 +821,7 @@ main {
                             width: 100%;
                             height: 45px;
                             border: none;
+                            padding-left: 15px;
                         }
 
                         .btn {
@@ -1038,21 +1072,14 @@ main {
             animation: faq .2s ease-in-out;
 
             form {
-                input[type="text"]::placeholder {
-                    padding-left: 10px;
-                }
-
                 input {
                     width: 45%;
                     height: 45px;
                     border: none;
                     font-family: Verdana, Geneva, sans-serif;
                     font-size: 15px;
-                    font-style: normal;
-                    font-variant: normal;
                     font-weight: 400;
-                    letter-spacing: normal;
-                    line-height: 20px;
+                    padding-left: 10px;
                 }
 
                 input,
@@ -1072,11 +1099,12 @@ main {
                     textarea {
                         width: 94%;
                         border: none;
+                        padding-left: 10px;
                     }
 
                     textarea::placeholder {
 
-                        padding-left: 10px;
+                        
                         font-family: Verdana, Geneva, sans-serif;
                         font-size: 15px;
                         font-style: normal;
@@ -1436,15 +1464,8 @@ main {
     #careerwrite {
 
         form {
-            input[type="text"]::placeholder {
-                padding-left: 10px;
-            }
-
-            input[type="number"]::placeholder {
-                padding-left: 10px;
-            }
-
             input {
+                padding-left: 15px;
                 margin-top: 35px;
                 width: 45%;
                 height: 45px;
@@ -1472,11 +1493,12 @@ main {
             textarea {
                 width: 83%;
                 border: none;
+                padding-left: 15px;
+                padding-top: 10px;
             }
 
             textarea::placeholder {
 
-                padding-left: 10px;
                 font-family: Verdana, Geneva, sans-serif;
                 font-size: 15px;
                 font-style: normal;
@@ -1716,11 +1738,8 @@ main {
         }
 
         form {
-            input[type="text"]::placeholder {
-                padding-left: 10px;
-            }
-
             input {
+                padding-left: 15px;
                 width: 45%;
                 height: 45px;
                 border: 2px solid rgb(227, 227, 227);
@@ -1742,7 +1761,6 @@ main {
                 background-color: white;
                 outline: none !important;
                 border: #E9B732 solid 2px;
-
             }
 
             .message {
@@ -1751,11 +1769,11 @@ main {
                 textarea {
                     width: 94%;
                     border: 2px solid rgb(227, 227, 227);
+                    padding-left: 10px;
+                    padding-top: 8px;
                 }
 
                 textarea::placeholder {
-
-                    padding-left: 10px;
                     font-family: Verdana, Geneva, sans-serif;
                     font-size: 15px;
                     font-style: normal;
@@ -1836,36 +1854,40 @@ main {
             }
         }
     }
-    #addedBasket{
-       .box{
-        width: 100%;
-        border: solid 4px #10C45C;
-        i{
-            font-size: 18px;
-            color: #10C45C;
-        }
-        span{
-            font-size: 16px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: 900;
-            color: #10C45C;
-        }
-       }
-       .btn{
-        a{
+
+    #addedBasket {
+        .box {
             width: 100%;
-            background-color: #2C75E4;
-            border: none;
-            border-radius: 0px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            height: 42px;
-            font-weight: 700;
-            font-size: 14px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            border: solid 4px #10C45C;
+
+            i {
+                font-size: 18px;
+                color: #10C45C;
+            }
+
+            span {
+                font-size: 16px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 900;
+                color: #10C45C;
+            }
         }
-       }
+
+        .btn {
+            a {
+                width: 100%;
+                background-color: #2C75E4;
+                border: none;
+                border-radius: 0px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                height: 42px;
+                font-weight: 700;
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 
     #detailcourse {
@@ -2345,6 +2367,7 @@ main {
             width: 100%;
             background-color: #385BCE;
             transition: .2s;
+
             label {
                 color: white;
                 font-family: Verdana, Geneva, sans-serif;
@@ -3056,6 +3079,48 @@ main {
 
         }
     }
+
+    #levelQuiz {
+        #terms {
+            h3 {
+                font-size: 24px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #273044;
+                font-weight: 700;
+            }
+
+            h1 {
+                font-size: 50px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 700;
+                color: #273044;
+            }
+
+            p {
+                font-size: 16px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #273044;
+            }
+
+            button {
+                background-color: #2C75E4;
+                border: none;
+                border-radius: 20px;
+                width: 160px;
+                height: 53px;
+
+                h5 {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: white;
+                    font-size: 17px;
+                    font-weight: 700;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
 }
 
 footer {
@@ -3099,6 +3164,62 @@ footer {
     }
 }
 
+
+
+.centerSearch {
+    margin-top: 250px;
+
+    label {
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+        color: white;
+    }
+}
+
+.modal-body {
+    position: relative;
+    height: 60px;
+
+    input {
+        border: none;
+        width: 100%;
+        height: 30px;
+        padding-left: 10px;
+        font-size: 22px;
+        color: #5F5F5F;
+        padding-bottom: 5px;
+    }
+
+    input::placeholder {
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 60px;
+        width: 68px;
+        background-color: #EAB830;
+        border: none;
+        border-radius: 0px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        i {
+            font-size: 24px;
+        }
+    }
+
+    input:focus {
+
+        outline: none !important;
+    }
+
+}
+
 @keyframes Slide_Up {
     0% {
         transform: translateY(100px);
@@ -3123,14 +3244,44 @@ footer {
 
 @media only screen and (max-width: 992px) {
     header {
-        #topbar {
-            display: none;
-        }
+
 
         #mainbar {
             .menu {
                 display: none;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    header {
+        #topbar {
+            .contact {
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    header {
+        #topbar {
+            display: none;
+
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    header {
+        #topbar {
+            .responsiveIconsTopbar {
+                display: none;
+            }
+
         }
     }
 }
@@ -3154,7 +3305,6 @@ footer {
     main {
         #language {
             .box {
-
                 span {
                     display: flex;
 
@@ -3256,6 +3406,80 @@ footer {
     }
 }
 
+@media only screen and (max-width: 882px) {
+    main {
+        #slider {
+            #carouselExampleCaptions {
+                .carousel-inner {
+                    .carousel-item {
+                        img {
+                            height: 500px;
+                        }
+
+                        .carousel-caption {
+                            top: 30%;
+
+                            h1 {
+                                font-size: 30px;
+                            }
+
+                            p {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 661px) {
+    main {
+        #slider {
+            #carouselExampleCaptions {
+                .carousel-inner {
+                    .carousel-item {
+                        img {
+                            height: 400px;
+                        }
+
+                        .carousel-caption {
+                            top: 30%;
+
+                            h1 {
+                                font-size: 28px;
+                            }
+
+                            p {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 402px) {
+    main {
+        #slider {
+            .carousel-caption {
+                top: 30%;
+
+                h1 {
+                    font-size: 28px;
+                }
+
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 992px) {
     main {
         #careerwrite {
@@ -3279,7 +3503,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 394px) {
     main {
         #title-service {
             h1 {
@@ -3289,7 +3513,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 240px) {
+@media only screen and (max-width: 292px) {
     main {
         #title-service {
             h1 {
@@ -3299,11 +3523,11 @@ footer {
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 220px) {
     main {
-        .registerbox {
-            input {
-                width: 100%;
+        #title-service {
+            h1 {
+                font-size: 15px;
             }
         }
     }
@@ -3319,18 +3543,86 @@ footer {
     }
 }
 
+@media only screen and (max-width: 992px) {
+    main {
+        .registerbox {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
 
 @media only screen and (min-width: 992px) {
     header {
         #mainbar {
             .logo {
-                i{
+                i {
                     display: none;
                 }
             }
-            .respmenu{
+
+            .respmenu {
                 display: none;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    main {
+        #achivement {
+            height: 850px;
+
+            .title {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    main {
+        #detailcourse {
+            .btn {
+                button {
+                    width: 210px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    main {
+        #whyus {
+            .box {
+                margin-top: 50px;
+            }
+
+            .line {
+                display: none;
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    main {
+
+        #result {
+            .shortline {
+                display: none;
+            }
+
+            .longline {
+                display: none;
+            }
+        }
+
     }
 }

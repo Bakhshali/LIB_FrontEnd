@@ -174,6 +174,15 @@ header #mainbar .container .row .menu .dropdown-menu .dropdown-menu-1 {
 header #topbar {
   background-color: #F15922;
 }
+header #topbar .container .row .responsiveIconsTopbar ul {
+  list-style: none;
+}
+header #topbar .container .row .responsiveIconsTopbar ul a {
+  text-decoration: none;
+  padding-left: 10px;
+  color: white;
+  font-size: 18px;
+}
 header #topbar .container .row .contact ul li {
   padding-left: 20px;
   color: white;
@@ -216,28 +225,25 @@ header #topbar .container .row .account .line {
 }
 
 main #slider #carouselExampleCaptions .carousel-inner .carousel-item img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 700px;
 }
 main #slider #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
-  top: 30%;
+  top: 40%;
 }
 main #slider #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h1 {
   -webkit-animation: Slide_Up 1.4s ease;
           animation: Slide_Up 1.4s ease;
-  font-size: 50px;
-  font-style: normal;
-  font-variant: normal;
+  font-size: 40px;
   font-weight: 700;
-  letter-spacing: normal;
-  line-height: 75px;
   color: #f2c448;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 4px 4px 5px black;
 }
 main #slider #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption p {
   -webkit-animation: Slide_Up 2.1s ease;
           animation: Slide_Up 2.1s ease;
-  font-size: 35px;
+  font-size: 25px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -604,6 +610,7 @@ main #email .container .row .electron .subs input {
   width: 100%;
   height: 45px;
   border: none;
+  padding-left: 15px;
 }
 main #email .container .row .electron .subs .btn button {
   background-color: #273044;
@@ -798,26 +805,14 @@ main #whyus .appeal {
   -webkit-animation: faq 0.2s ease-in-out;
           animation: faq 0.2s ease-in-out;
 }
-main #whyus .appeal form input[type=text]::-moz-placeholder {
-  padding-left: 10px;
-}
-main #whyus .appeal form input[type=text]:-ms-input-placeholder {
-  padding-left: 10px;
-}
-main #whyus .appeal form input[type=text]::placeholder {
-  padding-left: 10px;
-}
 main #whyus .appeal form input {
   width: 45%;
   height: 45px;
   border: none;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 15px;
-  font-style: normal;
-  font-variant: normal;
   font-weight: 400;
-  letter-spacing: normal;
-  line-height: 20px;
+  padding-left: 10px;
 }
 main #whyus .appeal form input,
 main #whyus .appeal form select {
@@ -834,9 +829,9 @@ main #whyus .appeal form .message {
 main #whyus .appeal form .message textarea {
   width: 94%;
   border: none;
+  padding-left: 10px;
 }
 main #whyus .appeal form .message textarea::-moz-placeholder {
-  padding-left: 10px;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -846,7 +841,6 @@ main #whyus .appeal form .message textarea::-moz-placeholder {
   line-height: 20px;
 }
 main #whyus .appeal form .message textarea:-ms-input-placeholder {
-  padding-left: 10px;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -856,7 +850,6 @@ main #whyus .appeal form .message textarea:-ms-input-placeholder {
   line-height: 20px;
 }
 main #whyus .appeal form .message textarea::placeholder {
-  padding-left: 10px;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -1130,25 +1123,8 @@ main #filtershow .wishlistfilter span i {
 main #filtershow .wishlistfilter span i:hover {
   color: red;
 }
-main #careerwrite form input[type=text]::-moz-placeholder {
-  padding-left: 10px;
-}
-main #careerwrite form input[type=text]:-ms-input-placeholder {
-  padding-left: 10px;
-}
-main #careerwrite form input[type=text]::placeholder {
-  padding-left: 10px;
-}
-main #careerwrite form input[type=number]::-moz-placeholder {
-  padding-left: 10px;
-}
-main #careerwrite form input[type=number]:-ms-input-placeholder {
-  padding-left: 10px;
-}
-main #careerwrite form input[type=number]::placeholder {
-  padding-left: 10px;
-}
 main #careerwrite form input {
+  padding-left: 15px;
   margin-top: 35px;
   width: 45%;
   height: 45px;
@@ -1173,9 +1149,10 @@ main #careerwrite form input:focus {
 main #careerwrite form textarea {
   width: 83%;
   border: none;
+  padding-left: 15px;
+  padding-top: 10px;
 }
 main #careerwrite form textarea::-moz-placeholder {
-  padding-left: 10px;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -1185,7 +1162,6 @@ main #careerwrite form textarea::-moz-placeholder {
   line-height: 20px;
 }
 main #careerwrite form textarea:-ms-input-placeholder {
-  padding-left: 10px;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -1195,7 +1171,6 @@ main #careerwrite form textarea:-ms-input-placeholder {
   line-height: 20px;
 }
 main #careerwrite form textarea::placeholder {
-  padding-left: 10px;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -1382,16 +1357,8 @@ main #question .title h3 {
   letter-spacing: normal;
   line-height: 34px;
 }
-main #question form input[type=text]::-moz-placeholder {
-  padding-left: 10px;
-}
-main #question form input[type=text]:-ms-input-placeholder {
-  padding-left: 10px;
-}
-main #question form input[type=text]::placeholder {
-  padding-left: 10px;
-}
 main #question form input {
+  padding-left: 15px;
   width: 45%;
   height: 45px;
   border: 2px solid rgb(227, 227, 227);
@@ -1418,9 +1385,10 @@ main #question form .message {
 main #question form .message textarea {
   width: 94%;
   border: 2px solid rgb(227, 227, 227);
+  padding-left: 10px;
+  padding-top: 8px;
 }
 main #question form .message textarea::-moz-placeholder {
-  padding-left: 10px;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -1430,7 +1398,6 @@ main #question form .message textarea::-moz-placeholder {
   line-height: 20px;
 }
 main #question form .message textarea:-ms-input-placeholder {
-  padding-left: 10px;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -1440,7 +1407,6 @@ main #question form .message textarea:-ms-input-placeholder {
   line-height: 20px;
 }
 main #question form .message textarea::placeholder {
-  padding-left: 10px;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -2481,6 +2447,39 @@ main #course .close i:hover {
   color: red;
   border: solid 2px red;
 }
+main #levelQuiz #terms h3 {
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #273044;
+  font-weight: 700;
+}
+main #levelQuiz #terms h1 {
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  color: #273044;
+}
+main #levelQuiz #terms p {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #273044;
+}
+main #levelQuiz #terms button {
+  background-color: #2C75E4;
+  border: none;
+  border-radius: 20px;
+  width: 160px;
+  height: 53px;
+}
+main #levelQuiz #terms button h5 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 footer #copy {
   background-color: #F15922;
@@ -2504,6 +2503,60 @@ footer #copy .container .row .social ul li {
 footer #copy .container .row .social ul li a {
   text-decoration: none;
   color: white;
+}
+
+.centerSearch {
+  margin-top: 250px;
+}
+.centerSearch label {
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.modal-body {
+  position: relative;
+  height: 60px;
+}
+.modal-body input {
+  border: none;
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+  font-size: 22px;
+  color: #5F5F5F;
+  padding-bottom: 5px;
+}
+.modal-body input::-moz-placeholder {
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.modal-body input:-ms-input-placeholder {
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.modal-body input::placeholder {
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.modal-body button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 60px;
+  width: 68px;
+  background-color: #EAB830;
+  border: none;
+  border-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.modal-body button i {
+  font-size: 24px;
+}
+.modal-body input:focus {
+  outline: none !important;
 }
 
 @-webkit-keyframes Slide_Up {
@@ -2544,10 +2597,22 @@ footer #copy .container .row .social ul li a {
   }
 }
 @media only screen and (max-width: 992px) {
+  header #mainbar .menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header #topbar .contact {
+    display: none;
+  }
+}
+@media only screen and (max-width: 300px) {
   header #topbar {
     display: none;
   }
-  header #mainbar .menu {
+}
+@media only screen and (min-width: 992px) {
+  header #topbar .responsiveIconsTopbar {
     display: none;
   }
 }
@@ -2610,6 +2675,45 @@ footer #copy .container .row .social ul li a {
     height: 400px;
   }
 }
+@media only screen and (max-width: 882px) {
+  main #slider #carouselExampleCaptions .carousel-inner .carousel-item img {
+    height: 500px;
+  }
+  main #slider #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+    top: 30%;
+  }
+  main #slider #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 30px;
+  }
+  main #slider #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 661px) {
+  main #slider #carouselExampleCaptions .carousel-inner .carousel-item img {
+    height: 400px;
+  }
+  main #slider #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+    top: 30%;
+  }
+  main #slider #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 28px;
+  }
+  main #slider #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 402px) {
+  main #slider .carousel-caption {
+    top: 30%;
+  }
+  main #slider .carousel-caption h1 {
+    font-size: 28px;
+  }
+  main #slider .carousel-caption p {
+    display: none;
+  }
+}
 @media only screen and (max-width: 992px) {
   main #careerwrite form input .smallinput {
     width: 100%;
@@ -2622,14 +2726,19 @@ footer #copy .container .row .social ul li a {
     width: 100%;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 394px) {
   main #title-service h1 {
     font-size: 35px;
   }
 }
-@media only screen and (max-width: 240px) {
+@media only screen and (max-width: 292px) {
   main #title-service h1 {
     font-size: 25px;
+  }
+}
+@media only screen and (max-width: 220px) {
+  main #title-service h1 {
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -2647,6 +2756,35 @@ footer #copy .container .row .social ul li a {
     display: none;
   }
   header #mainbar .respmenu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main #achivement {
+    height: 850px;
+  }
+  main #achivement .title h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 335px) {
+  main #detailcourse .btn button {
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main #whyus .box {
+    margin-top: 50px;
+  }
+  main #whyus .line {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main #result .shortline {
+    display: none;
+  }
+  main #result .longline {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
